@@ -190,9 +190,9 @@
   <h2>Instruction</h2>
   <p>Welcome to Disk Simulator! Your goal is to control the disk head(<span class="head"></span>) by moving it left or right 
     to match the sector number of incoming I/O requests. Here's how it works:
-    <br>Incoming Requests: Requests will appear on the left, each marked with a number (e.g., 42) and a green color. Keep an eye on them!
-    <br>Request Colors: All requests start as green. If a request stays unhandled for too long, it turns yellow and then red.
-    <br>Sandglass Icon: While handling a request, a sandglass icon (⌛️) will appear, indicating active processing.
+    <br>＊Incoming Requests: Requests will appear on the left, each marked with a number (e.g., 42) and a green color. Keep an eye on them!
+    <br>＊Request Colors: All requests start as green. If a request stays unhandled for too long, it turns yellow and then red.
+    <br>＊Sandglass Icon: While handling a request, a sandglass icon (⌛️) will appear, indicating active processing.
     <br>
     <span class="queue-box" style="background-color: green; width: 97px">42</span>
     <span class="queue-box" style="background-color: orange; width: 97px">42</span>
@@ -201,13 +201,13 @@
     <span class="queue-box" style="background-color: orange; width: 97px">42 ⌛️</span>
     <span class="queue-box" style="background-color: red; width: 97px">42 ⌛️</span>
     <br>
-    <br>Reading Process: Move the disk head to the sector with a number matching a request to start reading. The disk head must scan the whole sector to complete the request.
-    <br>Scoring: Your score is impacted by how efficiently you clear requests. Clear them all to win. Too many unhandled requests lead to high disk latency, and the angry user may reboot the computer, resulting in a loss.
+    <br>＊Reading Process: Move the disk head to the sector with a number matching a request to start reading. The disk head must scan the whole sector to complete the request.
+    <br>＊Scoring: Your score is impacted by how efficiently you clear requests. Clear them all to win. Too many unhandled requests lead to high disk latency, and the angry user may reboot the computer, resulting in a loss.
   </p>
   <h2>Controls</h2>
   <p>
-    <br>Use the left arrow and right arrow to move the disk head.
-    <br>The disk head can't be moved while reading a correct sector.
+    ＊Use the left arrow and right arrow to move the disk head.
+    <br>＊The disk head can't be moved while reading a correct sector.
     <br>
     After the game, check the "AI Replay w/" section to select an algorithm and compare your performance with the AI. Press any key or click outside to close this help page.
   </p>
