@@ -188,9 +188,12 @@
 </div>
 <div id="help-box" class="text">
   <h2>Instruction</h2>
-  <p>This game simulates disk operation. You will control the disk head (<span class="head"></span>) by moving to the left or right sector.
-    After the system is booted, there will be a number of I/O requests incoming (shown at left) that you must fulfill.
-    Each request has a number on it and has three different colors: <br>
+  <p>Welcome to Disk Simulator! Your goal is to control the disk head(<span class="head"></span>) by moving it left or right 
+    to match the sector number of incoming I/O requests. Here's how it works:
+    Incoming Requests: Requests will appear on the left, each marked with a number (e.g., 42) and a green color. Keep an eye on them!
+    Request Colors: All requests start as green. If a request stays unhandled for too long, it turns yellow and then red.
+    Sandglass Icon: While handling a request, a sandglass icon (⌛️) will appear, indicating active processing.
+    <br>
     <span class="queue-box" style="background-color: green; width: 97px">42</span>
     <span class="queue-box" style="background-color: orange; width: 97px">42</span>
     <span class="queue-box" style="background-color: red; width: 97px">42</span>
@@ -198,19 +201,15 @@
     <span class="queue-box" style="background-color: orange; width: 97px">42 ⌛️</span>
     <span class="queue-box" style="background-color: red; width: 97px">42 ⌛️</span>
     <br>
-    When you move the header to the sector with number the same as a request, the disk will start reading that part.
-    The disk header has to scan the whole sector to complete an I/O request, not only a part of it.
-    When it is handling one of the requests in queue, a sandglass icon will be added to that request.
-    All requests come in color green. If a request is left there for too long, it will first turn yellow then turn red.
-    This will affect your score after clearing the requests. When you clear all requests, you win. When there are too many unhandled requests,
-    the disk lantency becomes too high and the angry user will reboot the computer and thus you lose. Can you fulfill all requests and score high?
+    Reading Process: Move the disk head to the sector with a number matching a request to start reading. The disk head must scan the whole sector to complete the request.
+    Scoring: Your score is impacted by how efficiently you clear requests. Clear them all to win. Too many unhandled requests lead to high disk latency, and the angry user may reboot the computer, resulting in a loss.
   </p>
   <h2>Controls</h2>
   <p>
-    Disk header can be moved with left arrow and right arrow. When it is reading a correct sector, it cannot be moved.
-    After the game, click on the algorithm after "AI Replay w/" to choose an algorithm and see if your performance beats the AI!
+    Use the left arrow and right arrow to move the disk head.
+    The disk head can't be moved while reading a correct sector.
     <br>
-    Press any key or click outside to close this help page.
+    After the game, check the "AI Replay w/" section to select an algorithm and compare your performance with the AI. Press any key or click outside to close this help page.
   </p>
 </div>
 
